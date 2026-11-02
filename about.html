@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <a href="index.html" class="logo">Heritage &amp; Hand</a>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation">Menu</button>
+            <nav class="main-nav" id="primary-navigation" aria-label="Primary">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" aria-current="page">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="enquiry.html">Enquiry</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="container">
+                <p class="section-eyebrow">About Us</p>
+                <h1>Our story</h1>
+
+                <h2>History</h2>
+                <p>
+                    Founded in 2014 as a small workshop in Gauteng, Heritage &amp; Hand Carpentry began with a simple goal: to restore the dedication to handcrafted quality in modern furniture. Over the past decade, we have expanded from miniature repairs to delivering bespoke interior joinery, custom cabinetry, and full structural fitting solutions across South Africa.
+                </p>
+
+                <h2>Mission</h2>
+                <p>
+                    Our mission is to transform living and commercial spaces through exceptional woodworking. We are dedicated to using reliable materials, precise execution, and personal client collaboration to build functional, beautiful woodwork tailored to each client's vision.
+                </p>
+
+                <h2>Vision</h2>
+                <p>
+                    We aim to be South Africa's premier bespoke carpentry brand—setting the benchmark for sustainable craftsmanship, design excellence, and lifelong durability in every piece we create.
+                </p>
+
+                <h2>Meet the team</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>Rethabile</h3>
+                        <p>Founder &amp; Master Carpenter. Over 20 years of woodworking experience specializing in custom joinery and bespoke cabinetry.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Gugulethu</h3>
+                        <p>Senior joiner with over 15 years of experience in custom craftsmanship.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; <span id="year"></span> Heritage &amp; Hand Carpentry. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

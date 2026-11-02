@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://heritageandhand.co.za/sitemap.xml

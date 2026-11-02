@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <a href="index.html" class="logo">Heritage &amp; Hand</a>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation">
+                Menu
+            </button>
+            <nav class="main-nav" id="primary-navigation" aria-label="Primary">
+                <ul>
+                    <li><a href="index.html" aria-current="page">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="enquiry.html">Enquiry</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-text">
+                    <p class="section-eyebrow">Custom Carpentry &amp; Joinery</p>
+                    <h1>Handcrafted furniture and fittings, built to last a lifetime</h1>
+                    <p>
+                        With over 10 years of professional woodworking experience, we focus on crafting custom interior fittings, cabinetry, and architectural furniture. Every piece is handcrafted using sustainably sourced timber, tailored precisely to elevate your living space. Proudly serving all provinces in South Africa.
+                    </p>
+                    <a href="enquiry.html" class="btn">Request a Quote</a>
+                </div>
+                <div class="hero-image">
+                    <img src="hero-medium.jpg"
+                         srcset="hero-small.jpg 480w, hero-medium.jpg 800w, hero-large.jpg 1200w"
+                         sizes="(max-width: 780px) 100vw, 50vw"
+                         alt="A beautiful handcrafted light wood cabinet" />
+                </div>
+            </div>
+        </section>
+
+        <!-- intro -->
+        <section>
+            <div class="container">
+                <h2>Why choose us</h2>
+                <p>We pride ourselves on delivering woodworking solutions and have a steadfast commitment to client satisfaction.</p>
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>Experience</h3>
+                        <p>Backed by over 10 years of experience, certified Red Seal carpentry qualifications, and a deep-rooted passion for timber craft, we bring top-notch expertise to every project.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Craftsmanship</h3>
+                        <p>We combine traditional techniques with modern precision tools. Using exceptional quality hardwoods and eco-friendly finishes, every detail is engineered for strength and a flawless aesthetic finish.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Local &amp; Trusted</h3>
+                        <p>Based in Pretoria North, we are a trusted name in the local woodworking community, known for our quality work and reliable service.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Preview of services -->
+        <section>
+            <div class="container">
+                <h2>What we do</h2>
+                <p>
+                    From bespoke kitchen cabinetry and built-in wardrobes to custom hardwood tables, architectural wall paneling, and outdoor decking, we design, build, and install premium woodwork tailored to your exact space. Explore our complete offerings on <a href="services.html">the Services page</a>.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; <span id="year"></span> Heritage &amp; Hand Carpentry. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

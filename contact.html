@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <a href="index.html" class="logo">Heritage &amp; Hand</a>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation">Menu</button>
+            <nav class="main-nav" id="primary-navigation" aria-label="Primary">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="enquiry.html">Enquiry</a></li>
+                    <li><a href="contact.html" aria-current="page">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="container">
+                <p class="section-eyebrow">Contact</p>
+                <h1>Get in Touch</h1>
+
+                <div>
+                    <p>Visit our main workshop in Pretoria or send us a general message using the contact form below. Validated messages will automatically compile an email to our team[cite: 23].</p>
+                </div>
+
+                <div class="locations">
+                    <div class="card">
+                        <h3>Workshop — Pretoria</h3>
+                        <address>
+                            23 Staal Street<br>
+                            Danville, Pretoria, 0183<br>
+                            Tel: 082 845 6999<br>
+                            Email: <a href="mailto:info@heritageandhand.co.za">info@heritageandhand.co.za</a>
+                        </address>
+                        <div class="map-embed">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3592.8!2d28.1!3d-25.7!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sMjXCsDQyJzAwLjAiUyAyOMKwMDYnMDAuMCJF!5e0!3m2!1sen!2sza!4v1600000000000!5m2!1sen!2sza"
+                                    title="Map showing workshop location"
+                                    loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <h2>Send us a message</h2>
+                <form id="contact-form" data-form novalidate>
+                    <div class="form-row">
+                        <label for="c-name">Full name</label>
+                        <input type="text" id="c-name" name="name" required minlength="2">
+                        <small class="error-msg" id="c-name-error" style="color: #c53030; display: none;"></small>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="c-email">Email address</label>
+                        <input type="email" id="c-email" name="email" required>
+                        <small class="error-msg" id="c-email-error" style="color: #c53030; display: none;"></small>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="c-subject">Message Type</label>
+                        <select id="c-subject" name="subject" required>
+                            <option value="" disabled selected>Select message type...</option>
+                            <option value="General Query">General Query</option>
+                            <option value="Consultation Booking">Consultation Booking</option>
+                            <option value="Feedback">Feedback</option>
+                        </select>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="c-message">Message</label>
+                        <textarea id="c-message" name="message" required minlength="10"></textarea>
+                        <small class="error-msg" id="c-message-error" style="color: #c53030; display: none;"></small>
+                    </div>
+
+                    <button type="submit" class="btn">Send Message</button>
+                    <div class="form-status" id="contact-status" role="status" style="margin-top: 1rem; padding: 1rem; border-radius: 4px; display: none;"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; <span id="year"></span> Heritage &amp; Hand Carpentry. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
